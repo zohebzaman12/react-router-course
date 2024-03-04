@@ -8,7 +8,7 @@ const Careers = () => {
     <div className='careers'>
         {
             careers.map((career) =>(
-                <NavLink to="/" key={career.id}>
+                <NavLink to={career.id.toString()} key={career.id}>
                     <p>{career.title}</p>
                     <p>Based in {career.location}</p>
                 </NavLink>
